@@ -8,7 +8,7 @@ function Footer() {
     <div className='footer-container'>
       <section className='footer-subscription'>
         <p className='footer-subscription-heading'>
-          Join the Adventure newsletter to receive our best vacation deals
+          Join our mailing list to receive emails about upcoming recitals!
         </p>
         <p className='footer-subscription-text'>
           You can unsubscribe at any time.
@@ -29,34 +29,30 @@ function Footer() {
         <div className='footer-link-wrapper'>
           <div class='footer-link-items'>
             <h2>About Us</h2>
-            <Link to='/sign-up'>How it works</Link>
-            <Link to='/'>Testimonials</Link>
-            <Link to='/'>Careers</Link>
-            <Link to='/'>Investors</Link>
-            <Link to='/'>Terms of Service</Link>
+            <Link to='/sign-up'>Who are we?</Link>
+            <Link to='/'>Current Students</Link>
+            <Link to='/'>Alumni</Link>
+            <Link to='/'>Dr. Wang</Link>
           </div>
           <div class='footer-link-items'>
             <h2>Contact Us</h2>
-            <Link to='/'>Contact</Link>
-            <Link to='/'>Support</Link>
-            <Link to='/'>Destinations</Link>
-            <Link to='/'>Sponsorships</Link>
+            <Link to='/'>Website Issues</Link>
+            <Link to='/'>Contact Dr. Wang</Link>
+            <Link to='/'>Contact Webmaster</Link>
           </div>
         </div>
         <div className='footer-link-wrapper'>
           <div class='footer-link-items'>
             <h2>Videos</h2>
-            <Link to='/'>Submit Video</Link>
-            <Link to='/'>Ambassadors</Link>
-            <Link to='/'>Agency</Link>
-            <Link to='/'>Influencer</Link>
+            <Link to='/'>Previous Recitals</Link>
+            <Link to='/'>Alumni Youtube Profiles</Link>
           </div>
           <div class='footer-link-items'>
             <h2>Social Media</h2>
-            <Link to='/'>Instagram</Link>
-            <Link to='/'>Facebook</Link>
-            <Link to='/'>Youtube</Link>
-            <Link to='/'>Twitter</Link>
+            <Link to='https://www.instagram.com/pianobienen.nu/'>Instagram</Link>
+            <Link to='https://www.facebook.com/share/HJjLKNgGMXGfz2xZ/'>Facebook</Link>
+            <Link to='https://www.youtube.com/channel/UCKQShOc8kIVm4EciB0kSO7A'>Youtube</Link>
+          
           </div>
         </div>
       </div>
@@ -64,15 +60,14 @@ function Footer() {
         <div class='social-media-wrap'>
           <div class='footer-logo'>
             <Link to='/' className='social-logo'>
-              TRVL
-              <i class='fab fa-typo3' />
+              Dr. Wang's Piano Studio
             </Link>
           </div>
-          <small class='website-rights'>TRVL © 2020</small>
+          <small class='website-rights'>Jasmine Meyer © 2024</small>
           <div class='social-icons'>
             <Link
               class='social-icon-link facebook'
-              to='/'
+              to='https://www.facebook.com/share/HJjLKNgGMXGfz2xZ/'
               target='_blank'
               aria-label='Facebook'
             >
@@ -80,7 +75,7 @@ function Footer() {
             </Link>
             <Link
               class='social-icon-link instagram'
-              to='/'
+              to='https://www.instagram.com/pianobienen.nu/'
               target='_blank'
               aria-label='Instagram'
             >
@@ -88,28 +83,13 @@ function Footer() {
             </Link>
             <Link
               class='social-icon-link youtube'
-              to='/'
+              to='https://www.youtube.com/channel/UCKQShOc8kIVm4EciB0kSO7A'
               target='_blank'
               aria-label='Youtube'
             >
               <i class='fab fa-youtube' />
             </Link>
-            <Link
-              class='social-icon-link twitter'
-              to='/'
-              target='_blank'
-              aria-label='Twitter'
-            >
-              <i class='fab fa-twitter' />
-            </Link>
-            <Link
-              class='social-icon-link twitter'
-              to='/'
-              target='_blank'
-              aria-label='LinkedIn'
-            >
-              <i class='fab fa-linkedin' />
-            </Link>
+            
           </div>
         </div>
       </section>
