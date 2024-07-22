@@ -1,0 +1,32 @@
+.titlewrapper{
+    background-color: rgb(232, 215, 250);
+}
+
+.maintitle{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    height: 100%;
+    padding: auto;
+    vertical-align: middle;
+    height:83vh;
+
+}
+
+.header{
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: #333;
+    text-align: center;
+
+}
+
+.subtitle{
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 0.3rem;
+    color: #333;
+    text-align: center;
+}
