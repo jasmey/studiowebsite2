@@ -57,12 +57,12 @@ export const SidebarData = [
   },
   {
     title: 'Music in Chicago',
-    path: '/musicinchicago',
+    path: '/chicagomusic',
     icon: <FaMusic/>
   },
   {
     title: 'Guide to Bienen',
-    path: '/guidetobienen',
+    path: '/bienenguide',
     icon: <FaIcons.FaMap />
     
   }

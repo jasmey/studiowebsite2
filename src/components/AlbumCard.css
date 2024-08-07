@@ -1,6 +1,11 @@
+.album{
+  background: #4d3c56;
+  padding: 4rem;
+}
+
 .cards {
   padding: 4rem;
-  background: #d4cfdc;
+  background: #d0c5da;
 }
 
 h1 {
@@ -28,7 +33,7 @@ h1 {
 }
 
 .cards__item {
-  background: #fff;
+  background: #1d1d1d;
   display: flex;
   flex: 1;
   margin: 0 1rem;
@@ -39,7 +44,7 @@ h1 {
   display: flex;
   flex-flow: column;
   width: 100%;
-  box-shadow: 0 6px 20px rgba(56, 125, 255, 0.17);
+  box-shadow: 0 6px 20px rgba(56, 126, 255, 0.406);
   -webkit-filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
   filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
   border-radius: 10px;
@@ -71,6 +76,7 @@ h1 {
   color: #fff;
   background-color: #1f98f4;
   box-sizing: border-box;
+  opacity: 0;
 }
 
 .cards__item__img {
@@ -97,7 +103,7 @@ h1 {
 }
 
 .cards__item__text {
-  color: #252e48;
+  color: #d0c5da;
   font-size: 18px;
   line-height: 24px;
 }

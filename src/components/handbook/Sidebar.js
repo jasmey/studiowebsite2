@@ -8,7 +8,7 @@ import SubMenu from './SubMenu';
 import { IconContext } from 'react-icons/lib';
 
 const Nav = styled.div`
-  background: rgb(85, 63, 108);
+  background: #4d3c56;
   height: 80px;
   display: flex;
   justify-content: flex-start;
@@ -19,6 +19,7 @@ const NavIcon = styled(Link)`
   margin-left: 2rem;
   font-size: 2rem;
   height: 80px;
+  width: 80px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -32,7 +33,7 @@ const SidebarNav = styled.nav`
   justify-content: center;
   position: fixed;
   top: 80;
-  left: ${({ sidebar }) => (sidebar ? '0' : '-100%')};
+  left: ${({ $sidebar }) => ($sidebar ? '0' : '-100%')};
   transition: 350ms;
   z-index: 10;
 `;
@@ -44,17 +45,19 @@ const SidebarWrap = styled.div`
 const Sidebar = () => {
   const [sidebar, setSidebar] = useState(false);
 
-  const showSidebar = () => setSidebar(!sidebar);
+  const showSidebar = () => setSidebar(true);
+
+  const hideSidebar = () => setSidebar(false);
 
   return (
     <>
       <IconContext.Provider value={{ color: 'rgb(232, 215, 250)' }}>
         <Nav>
-          <NavIcon to='#'>
-            <FaIcons.FaBars onClick={showSidebar} />
+          <NavIcon to='#' onMouseEnter={showSidebar} onMouseLeave={hideSidebar} >
+            <FaIcons.FaBars />
           </NavIcon>
         </Nav>
-        <SidebarNav sidebar={sidebar}>
+        <SidebarNav $sidebar={sidebar ? 1: 0} onMouseEnter={showSidebar} onMouseLeave={hideSidebar}>
           <SidebarWrap>
             <NavIcon to='#'>
               <AiIcons.AiOutlineClose onClick={showSidebar} />

@@ -43,24 +43,19 @@ const DropdownLink = styled(Link)`
 const SubMenu = ({ item }) => {
   const [subnav, setSubnav] = useState(false);
 
-  const showSubnav = () => {
-    console.log(subnav);
-    setSubnav(!subnav);
-    console.log(subnav);
-  };
+  const showSubnav = () => setSubnav(true);
+  const hideSubnav = () => setSubnav(false);
+
 
 
   return (
     <>
       <SidebarLink
         to={item.path}
-        onClick={(e) => {
-          if (item.subNav) {
-            e.preventDefault(); // Prevent default link behavior
-            showSubnav(); // Toggle submenu visibility
-          }
-          // If there's no subNav, the link behaves normally and navigates to item.path
-        }}
+        onMouseEnter={item.subNav && showSubnav} 
+        onMouseLeave={item.subNav && hideSubnav}
+      
+      
       >
         <div>
           {item.icon}
@@ -77,7 +72,10 @@ const SubMenu = ({ item }) => {
       {subnav &&
         item.subNav.map((item, index) => {
           return (
-            <DropdownLink to={item.path} key={index}>
+            <DropdownLink to={item.path} key={index} 
+            onMouseEnter={showSubnav} 
+            onMouseLeave={hideSubnav}
+          >
               {item.icon}
               <SidebarLabel>{item.title}</SidebarLabel>
             </DropdownLink>

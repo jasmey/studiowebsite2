@@ -1,5 +1,14 @@
 .titlewrapper{
-    background-color: rgb(232, 215, 250);
+    background-color: rgb(195, 179, 211);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 .maintitle{
@@ -7,12 +16,13 @@
     flex-direction: column;
     justify-content:center;
     align-items:center;
-    height: 100%;
+    height: 81vh;
     padding: auto;
     vertical-align: middle;
-    height:82vh;
-
+    animation: fadeIn 2s ease-in-out;
+    
 }
+
 
 .header{
     font-size: 3rem;
@@ -38,6 +48,7 @@
     color: #4d3c56;
     text-align: center;
     font-style:italic;
+    letter-spacing: 0.15rem;
 }
 .question{
     font-size: 1.5rem;
@@ -64,11 +75,18 @@
     border-radius:10px;
     border: 0px;
     background-color:#27003285;
+    letter-spacing: 0.1rem;
+    text-transform: lowercase;
+}
+
+.button_wrapper button:not(.button_invalid):hover {
+    background-color: #4a0072; /* Change to desired hover color */
 }
 
 .button_invalid {
-    background-color:rgb(232, 215, 250) !important;
+    background-color:rgb(195, 179, 211) !important;
     cursor: default !important;
+    color: rgb(195, 179, 211) !important;
 }
 
 .scrollable_container{
@@ -78,10 +96,29 @@
         padding: 40px; /* Padding inside the bubble */
         border: 2px solid #cccccc00; /* Border around the bubble */
         border-radius: 20px; /* Rounded corners */
-        background-color: #ffffff4e; /* Background color */
+        background-color: #ffffff7c; /* Background color */
         overflow-y: scroll; /* Enable vertical scrolling */
         
 
+}
+
+.scrollable_container::-webkit-scrollbar {
+    width: 12px; /* Width of the scrollbar */
+}
+
+.scrollable_container::-webkit-scrollbar-track {
+    background: #e6e1ec; /* Background of the scrollbar track */
+    border-radius: 15px; /* Rounded corners for the track */
+    margin:10px;
+}
+
+.scrollable_container::-webkit-scrollbar-thumb {
+    background: #735e83; /* Color of the scrollbar thumb */
+    border-radius: 10px; /* Rounded corners for the thumb */
+}
+
+.scrollable_container::-webkit-scrollbar-thumb:hover {
+    background: #654081; /* Color of the scrollbar thumb on hover */
 }
 
 .qwrapper{
