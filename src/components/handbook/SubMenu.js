@@ -51,10 +51,12 @@ const SubMenu = ({ item }) => {
   return (
     <>
       <SidebarLink
-        to={item.path}
+        to={item.subNav ? '#' : item.path}
         onMouseEnter={item.subNav && showSubnav} 
         onMouseLeave={item.subNav && hideSubnav}
-      
+        onClick={item.subNav ? (e) => e.preventDefault() : null}
+        style={{ cursor: item.subNav ? 'default' : 'pointer' }} // Set cursor style
+    
       
       >
         <div>

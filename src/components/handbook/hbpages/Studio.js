@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { useNavigate } from 'react-router-dom';
 import Sidebar from '../Sidebar';
 import './hbpages.css';
@@ -19,6 +19,20 @@ const Studio = () => {
     if (currentPageIndex < pages.length - 1) {
       navigate(pages[currentPageIndex + 1]);
     }
+  }; 
+  
+
+  const [isAuthorized, setIsAuthorized] = useState(false);
+
+  const checkPassword = () => {
+    const password = 'key25'; // Set your password here
+    const userPassword = prompt('Enter the password, please.');
+
+    if (userPassword === password) {
+      setIsAuthorized(true);
+    } else {
+      alert('Incorrect password. Access denied.');
+    }
   };
 
   return (
@@ -35,7 +49,11 @@ const Studio = () => {
               Next
               </button>
             </div>
-            <div className='scrollable_container'>
+            <div className={`scrollable_container ${!isAuthorized ? 'centered' : ''}`}>
+            {!isAuthorized ? (
+            <button className="signin" onClick={checkPassword}><em>This section's content is for Wang Studio Current Students Only!</em>  <br/><br/> <strong>click to Enter Password.</strong> <br/> <br/><em>(else navigate to a different section to read something else!)</em></button>
+        ) : (
+          <>
                 <div className='qwrapper'>
                     <p className='question'>What is studio class?</p>
                       <div className='infodiv'>
@@ -88,6 +106,8 @@ const Studio = () => {
                     </p>
 
                 </div>
+          </>
+        )}
               </div>
             </div>
     </div>

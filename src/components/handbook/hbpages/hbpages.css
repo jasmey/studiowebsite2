@@ -89,6 +89,21 @@
     color: rgb(195, 179, 211) !important;
 }
 
+.signin {
+    background-color: #27003285;
+    color: #ffffff;
+    border: 0px;
+    border-radius: 10px;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    letter-spacing: 0.1rem;
+    text-transform: lowercase;
+    border: none;
+    margin:auto;
+    display:block;
+}
+
 .scrollable_container{
         width: 80vw; /* Fixed width */
         height: 60vh; /* Fixed height */
@@ -99,7 +114,12 @@
         background-color: #ffffff7c; /* Background color */
         overflow-y: scroll; /* Enable vertical scrolling */
         
+}
 
+.vertcenter {
+    display:flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .scrollable_container::-webkit-scrollbar {
