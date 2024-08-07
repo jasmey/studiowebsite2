@@ -22,6 +22,10 @@ function Navbar() {
     showButton();
   }, []);
 
+  const handleCalendarClick = () => {
+    window.location.href = 'https://calendar.google.com/calendar/u/3?cid=c3lsdmlhd2FuZ3BpYW5vc3R1ZGlvQGdtYWlsLmNvbQ';
+  };
+
   window.addEventListener('resize', showButton);
 
   return (
@@ -62,7 +66,7 @@ function Navbar() {
 
             <li>
               <Link
-                to='/sign-up'
+                to='https://calendar.google.com/calendar/u/3?cid=c3lsdmlhd2FuZ3BpYW5vc3R1ZGlvQGdtYWlsLmNvbQ'
                 className='nav-links-mobile'
                 onClick={closeMobileMenu}
               >
@@ -70,7 +74,7 @@ function Navbar() {
               </Link>
             </li>
           </ul>
-          {button && <Button buttonStyle='btn--outline'>CALENDAR</Button>}
+          {button && <Button buttonStyle='btn--outline' onClick={handleCalendarClick}>CALENDAR</Button>}
         </div>
       </nav>
     </>
