@@ -5,7 +5,7 @@ import Album from '../Album'
 function Photos() {
   return (
     <>
-    <div className='lavender'>
+    <div >
       <Album/>
 
     </div>

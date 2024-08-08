@@ -4,9 +4,13 @@ import { Button } from './Button';
 import './HeroSection.css';
 
 function HeroSection() {
+  const handleExploreClick = () => {
+    window.location.href = '/inspo';
+  }
+
   return (
     <div className='hero-container'>
-      <video src='videos/DrWangPerformance.mov' autoPlay loop muted />
+      <video src='/videos/DrWangPerformance.mov' autoPlay loop muted />
       <h1>PRACTICED TODAY?</h1>
       <p>What are you waiting for?</p>
       <div className='hero-btns'>
@@ -14,6 +18,7 @@ function HeroSection() {
           className='btns'
           buttonStyle='btn--outline'
           buttonSize='btn--large'
+          onClick={handleExploreClick}
         >
           INSPO
         </Button>
