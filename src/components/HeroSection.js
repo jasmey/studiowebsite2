@@ -4,9 +4,6 @@ import { Button } from './Button';
 import './HeroSection.css';
 
 function HeroSection() {
-  const handleExploreClick = () => {
-    window.location.href = '/inspo';
-  }
 
   return (
     <div className='hero-container'>
@@ -18,7 +15,7 @@ function HeroSection() {
           className='btns'
           buttonStyle='btn--outline'
           buttonSize='btn--large'
-          onClick={handleExploreClick}
+          linkTo='/inspo'
         >
           INSPO
         </Button>
@@ -26,6 +23,7 @@ function HeroSection() {
           className='btns'
           buttonStyle='btn--primary'
           buttonSize='btn--large'
+          onClick={console.log('hey')}
         >
           EXPLORE <i className='far fa-play-circle' />
         </Button>
