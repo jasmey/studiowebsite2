@@ -13,6 +13,7 @@ import Tips from './components/handbook/hbpages/Tips.js';
 import ChicagoMusic from './components/handbook/hbpages/ChicagoMusic.js';
 import BienenGuide from './components/handbook/hbpages/BienenGuide.js';
 import Inspo from './components/pages/Inspo.js';
+import Explore from './components/pages/Explore.js';
 
 
 function App() {
@@ -32,6 +33,7 @@ function App() {
           <Route path='/chicagomusic' element={<ChicagoMusic />} />
           <Route path='/bienenguide' element={<BienenGuide />} />
           <Route path='/inspo' element={<Inspo />} />
+          <Route path='/explore' element={<Explore />} />
         </Routes>
       </Router>
     </>

@@ -1,0 +1,130 @@
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.viewport{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn-cont {
+    width: 0;
+    height: 0;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.t-button {
+    width: 60vw;
+    height: 20vw;
+    background-color: #977ec76b; 
+    color: rgb(253, 255, 231);
+    font-size: 25px;
+    font-weight:bold;
+    letter-spacing:3px;
+    font-family:monospace;
+    text-align: center;
+    line-height: 20vw; /* Centers the text vertically */
+    cursor: pointer;
+    clip-path: polygon(35% 0%, 65% 0%, 100% 100%, 0% 100%); /* Trapezoid shape */
+    z-index: 5;
+    position: absolute;
+}
+.t-button:hover {
+    background-color: #44316797; 
+
+}
+
+.toprow{
+    display: inline-block;
+    margin:auto;
+    transform: rotate(180deg);
+    font-family:monospace;
+    letter-spacing:3px;
+}
+.leftrow{
+    transform: translate(-30vw,-20vh);
+ }
+ .rightrow{
+     transform: translate(13vw,-20vh);
+ }
+/* Media Queries for Responsive Text Size */
+@media (max-width: 1200px) {
+    .t-button, .toprow {
+        font-size: 24px;
+    }
+    .btn-cont{
+        margin-top:25vh;
+    }
+}
+
+@media (max-width: 992px) {
+    .t-button, .toprow {
+        font-size: 22px;
+    }
+    .btn-cont{
+        margin-top:20vh;
+    }
+    
+}
+
+@media (max-width: 768px) {
+    .t-button, .toprow {
+        font-size: 20px;
+    }
+    .t-button {
+        width: 70vw;
+        height: 23vw;
+    }
+    .leftrow{
+        transform: translate(-45vw,-20vh);
+     }
+     .rightrow{
+         transform: translate(28vw,-20vh);
+     }
+    
+     .btn-cont{
+        margin-top:20vh;
+    }
+}
+
+@media (max-width: 576px) {
+    .t-button, .toprow {
+        font-size: 18px;
+    }
+    .t-button {
+        width: 50vw;
+        height: 18vw;
+    }
+    
+    
+}
+
+
+.t-1:nth-child(1) {
+    transform: rotate(45deg)  translate(0%, 100%);
+}
+
+.t-1:nth-child(2) {
+    transform: rotate(135deg) translate(0%, 100%);
+}
+
+.t-2:nth-child(1) {
+    transform: rotate(225deg)  translate(50%, -50%);
+}
+
+.t-2:nth-child(2) {
+    transform: rotate(315deg) translate(-50%, -50%);
+}
