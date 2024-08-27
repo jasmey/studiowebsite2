@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;700&display=swap');
 
 @keyframes fadeIn {
     from {
@@ -14,6 +15,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow:hidden;
 }
 .btn-cont {
     width: 0;
@@ -23,18 +25,20 @@
     justify-content: center;
     align-items: center;
     position: relative;
-    animation: fadeIn 2s ease-in-out;
+    animation: fadeIn 1s ease-in-out;
 }
 
 .t-button {
     width: 60vw;
     height: 20vw;
-    background-color: #977ec76b; 
+    background-color: #0e071ae4; 
     color: rgb(253, 255, 231);
     font-size: 25px;
     font-weight:bold;
     letter-spacing:3px;
-    font-family:monospace;
+    font-family: "DM Serif Display", serif;
+    font-weight: 400;
+    font-style: normal;
     text-align: center;
     line-height: 20vw; /* Centers the text vertically */
     cursor: pointer;
@@ -43,7 +47,7 @@
     position: absolute;
 }
 .t-button:hover {
-    background-color: #44316797; 
+    background-color: #0e0a1697; 
 
 }
 
@@ -51,7 +55,9 @@
     display: inline-block;
     margin:auto;
     transform: rotate(180deg);
-    font-family:monospace;
+    font-family: "DM Serif Display", serif;
+    font-weight: 400;
+    font-style: normal;
     letter-spacing:3px;
 }
 .leftrow{

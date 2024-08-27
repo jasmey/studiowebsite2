@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;700&display=swap');
+
+.img__container {
+  position: relative;
+  overflow: hidden;
+  width: 100vw;
+}
+
+.back__button{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    position: absolute;
+    left: 5vw;
+    bottom:5vw;
+    background-color: #4d3a6f; 
+    cursor: pointer;
+    z-index: 5;
+    width: 100px;
+    height: 40px;
+    border-color:#2e1c4b;
+}
+.back__button:hover{
+    background-color:#2e1c4b;
+}
+
+
+.back__button__text{
+    position: absolute;
+    color:aliceblue;
+    font-size: 15px;
+    font-family:monospace;
+    font-style:italic;
+}
+
+.page__item__img {
+  height: 20vh;
+  width: 100%;
+  object-fit: cover;
+  vertical-align: top !important;
+}
+
+.page__item__info{
+    background-color:rgb(228, 224, 216);
+    height:70vh;
+    padding-left:2rem;
+}
+
+.page__item__title{
+    font-size: 4rem;
+    font-weight: bold;
+    text-align: left;
+    padding-top: 1rem;
+    font-family: "DM Serif Text", serif;
+    font-weight: 400;
+    font-style: bold;
+}
+
+.page__item__subtitle{
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: left;
+    padding-top: 1rem;
+    font-family: "DM Serif Text", serif;
+    font-weight: 400;
+    font-style: bold;
+}
+
+.page__item__text{
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-top:30px;
+    margin-left:40px;
+}

@@ -1,0 +1,35 @@
+.paragraph{
+    font-size: 1rem;
+    font-weight: 200;
+    line-height: 1;
+    margin-bottom: 1.5rem;
+    color: #333;
+    font-family: 'Open Sans', sans-serif;
+    text-justify: inter-word;
+    text-indent: 0rem;
+}
+
+.scrollable__container {
+    height: 30vh; /* Set a fixed height for the container */
+    overflow-y: auto; /* Enable vertical scrolling */
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #333;
+    text-align: justify;
+    padding: 1rem;
+}
+
+.bullet__columns {
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    margin-bottom: 1rem;
+    margin-left:20px;
+}
+
+.bullet__column{
+    display: flex;
+    flex-direction: column;
+    margin-right: 5rem;
+}

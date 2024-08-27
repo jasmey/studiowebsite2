@@ -5,7 +5,7 @@ import CircleSelector from '../CircleSelector'
 function Explore() {
   return (
     <>
-    <div className='stillbackground'>
+    <div className='stillbackground noscroll'>
       <CircleSelector/>
 
     </div>
